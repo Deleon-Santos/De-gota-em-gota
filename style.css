@@ -13,6 +13,8 @@ body{
     justify-content: space-between;
     align-items: center;
     max-width: 1024px;
+    padding: 15px 4%;
+    border: #00000022 2px solid;
     
 }
 .menu-navegacao{
@@ -55,14 +57,104 @@ body{
     border-radius: 50%;
     box-shadow: 0px 0px 5px #000;
 }
-.said_bar{
-    width: 100%;
-    height: 50px;
-    background-color: #fff;
+.said-bar{
+    width: 400px;
+    height: 100vh;
+    background-color: #ffffff00;
     display: flex;
+    justify-content: left;
+    align-items: center;
+    /* position: fixed; */
+    flex-direction: column;
+    padding: 10px 30px 0px 0;
+    margin-right: 10px;
+    border-right: 2px solid #00000022;
+}
+.said-bar .lista-dicas{
+    /* width: 100%; */
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 5px #000;
-    position: fixed;
-}
     
+    
+}
+.said-bar .lista-dicas li{
+    padding: 5px 0;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.main__principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    /* border-left: 2px solid #00000022; */
+    
+    
+}
+.main__img{
+    min-width: 100%;
+    background-color: blue;
+
+}
+.main__img img{
+    width: 100%;
+    height: 100%;
+    
+    box-shadow: 0px 0px 5px #000;
+}
+.main-projetos__projetos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 80px;
+    
+}
+.projetos{
+    max-width: 300px;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+
+    flex-direction: column;
+    margin-top: 30px;
+    
+      
+}
+.main-projetos__projetos img{
+    width: 100%;
+    height: 100%;   
+    box-shadow: 0px 0px 5px #000;
+}
+.main-projetos__projetos h2{
+    
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #000;
+}
+.main-projetos__projetos h3{
+    
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #000;
+}
+.main-projetos__projetos p{
+    
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #000;
+}
+.main-movie{
+    background-color: aqua;
+    text-align: center;
+    width: 100%;
+}
+.said-bar__ods img{
+    width: 300px;
+    height: 100%;
+    box-shadow: 0px 0px 5px #000;
+}
