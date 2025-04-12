@@ -1,6 +1,6 @@
 :root {
 
-    --cor-fundo-body: #e7f9ffa1;
+    --cor-fundo-body: #dfedfd77;
 
     --cor-topo: #ffffff;
     --cor-a: #0000007d;
@@ -20,7 +20,7 @@ body {
 
 header {
     background-color: var(--cor-topo);
-    border-bottom: 5px solid #ab0505;
+    border-bottom: 5px solid #05abab;
     box-shadow: 0px 3px 6px 3px #00000022;
     border-radius: 10px;
 }
@@ -127,6 +127,7 @@ header {
     font-weight: 800;
     font-size: 3rem;
     color: var(--cor-a);
+    margin-left: -20px;
 }
 
 .topo-logo img {
@@ -143,17 +144,19 @@ h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
+    text-shadow: 0px  2px 5px #0000003b; 
 }
 h2,h3{
     font-size: 1.5rem;
     color:var(--cor-titulo);
     font-weight: 600;
+    text-shadow: 0px  2px 5px #0000003b;
 }
 p {
     font-size: 1rem;
     color:var(--cor-geral);
     font-weight: 600;
-    
+    text-indent: 20px;
 }
 .said-bar {
     width: 400px;
@@ -233,6 +236,10 @@ p {
     box-shadow: 0px 0px 5px #000;
 }
 
+.main-projetos h2{
+    padding-top: 30px;
+    border-top: solid #00000022 2px;
+}
 .main-projetos__projetos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -284,6 +291,8 @@ p {
     background-color:  #05abab;
     text-align: center;
     width: 100%;
+    padding: 25px 0;
+    margin: 40px 0;
 }
 
 .said-bar__ods img {
