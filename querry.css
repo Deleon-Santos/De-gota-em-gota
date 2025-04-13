@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 1024px) {
+    main .interface{
+        display: flex;
+        flex-direction: column;
+        
+        
+    
+        gap: 10px;
+    }
+}
