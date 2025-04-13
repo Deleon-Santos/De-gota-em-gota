@@ -1,13 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
 :root {
-
     --cor-fundo-body: #dfedfd77;
     --cor-fundo-body2: #197ff3d2;
     --cor-topo: #ffffff;
     --cor-a: #0000007d;
     --cor-titulo: #212121a9;
     --cor-geral: #0000007a;
-
-
 }
 
 body {
@@ -139,6 +139,19 @@ header {
 
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #070707;
+    cursor: pointer;
+    z-index: 1001;
+    position: absolute;
+    top: 115px;
+    right: 20px;
+  }
+
 h1 {
     font-size: 2rem;
     color: var(--cor-titulo);
@@ -177,7 +190,7 @@ p {
     border-left: solid #00000022 1px;
     box-shadow: 3px 3px 10px #000000fa;
     border-radius: 10px;
-    padding-bottom: 3580px;
+    padding-bottom: 3730px;
 }
 
 .said-bar .lista-dicas {
@@ -343,6 +356,8 @@ footer .interface {
     margin-top: 10px;
     transition: all 0.5s ease-in-out;
     transform: scale(1.2);
+    margin-left: -40px;
+    padding-right: 10px;
 }
 
 .footer__copy {

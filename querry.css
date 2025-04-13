@@ -1,11 +1,150 @@
 
-@media screen and (max-width: 1024px) {
-    main .interface{
-        display: flex;
-        flex-direction: column;
+@media (max-width: 1024px) {
+    .navegacao{
+        flex-direction: column; /* Muda para coluna em telas menores */
+        gap: 20px; /* Adiciona espaçamento entre os itens */
+        justify-content: left;
         
-        
-    
-        gap: 10px;
+        /* border: solid 1px var(--cor-a); */
     }
+    .navegacao ul {
+        width: 100%; /* Largura total da barra de navegação */
+        justify-content: space-between; /* Alinha os itens à esquerda */
+        align-items: center;
+        padding: 0px 20px; /* Remove o padding lateral */
+        margin: 0px 0px 0px 0px; /* Remove a margem negativa */
+    }
+    .menu-navegacao a{
+        font-size: .9rem;
+    }
+    .topo-menu__redes-sociais  {
+        width: 100%; 
+        justify-content: left;
+        align-items: left;
+        margin-left: -20px; /* Alinha à esquerda */
+        
+    }
+    .topo-menu__redes-sociais a{
+        margin-left: 0px; /* Remove a margem esquerda */
+        padding: 5px 20px 5px 5px; /* Ajusta o padding */
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    }
+    .principal>.interface{
+        flex-direction: column;    
+    }
+    .said-bar {
+      width: 90%; /* Largura total da barra lateral */
+      flex-direction: column ;
+      
+      gap:40px;
+      margin: 20px auto; /* Centraliza a barra lateral e adiciona margem */
+      padding: 20px; /* Reduz o padding interno */
+     
+    }
+    .lista-dicas{
+        max-width: 600px;
+    }
+    .said-bar__ods{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Duas colunas em telas menores */
+        grid-row: repeat(3, 1fr);
+        gap: 20px; /* Reduz o espaçamento entre os itens */
+    }
+    .said-bar__ods h2 {
+        grid-column: 1 / -1 ;
+        grid-row: 2 / -1;
+      
+    }
+    .said-bar__ods p{
+      /* grid-row:  / -2; */
+      grid-column: 1 / -2;
+    }
+    .said-bar__ods img {
+        grid-row: 2 / -1;
+        grid-column: 2 / -1; /* Faz a imagem ocupar toda a largura */
+        
+    }
+    
+  
+    .said-bar .lista-dicas li {
+      margin-left: -40; /* Remove a margem esquerda da lista */
+      font-size: .9rem;
+      color: var(--cor-titulo);
+      font-weight: 600;
+    }
+  
+    .said-bar__ods h2 {
+      margin-top: 0px;
+    } 
+  
+    .said-bar__ods img {
+      max-width: 100%; /* Garante que a imagem não ultrapasse a largura */
+      height: auto;
+    }
+  
+    .main__principal {
+        
+        width: 96%;
+      padding-left: 0; /* Remove o padding esquerdo */
+      padding: 15px 2%; /* Adiciona padding lateral */
+    }
+    .principal .interface{
+        
+        flex-direction: column-reverse;
+    }
+    .main-projetos__projetos {
+        
+        flex-direction: row; /* Muda para coluna em telas menores */
+    }
+  
+    .projetos {
+      max-width: 100%; /* Ocupa a largura total disponível */
+      height: auto; /* Ajusta a altura automaticamente */
+      margin-top: 20px;
+    }
+  
+    .projetos img {
+      height: 300px; /* Mantém a proporção da imagem */
+    }
+  
+    .main-movie {
+      padding: 20px 0;
+      margin: 30px 0;
+    }
+  
+    footer .interface {
+      grid-template-columns: 1fr; /* Uma coluna em telas menores */
+      gap: 20px;
+    }
+  
+    .footer {
+      margin: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .footer__copy {
+      font-size: .9rem;
+    }
+}
+@media (max-width: 680px) {
+    .menu-navegacao {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 260px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+      }
+    
+      .menu-navegacao.show {
+        display: flex;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+      
 }
