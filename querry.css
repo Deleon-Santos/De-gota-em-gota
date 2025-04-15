@@ -126,25 +126,3 @@
       font-size: .9rem;
     }
 }
-@media (max-width: 680px) {
-    .menu-navegacao {
-        display: none;
-        flex-direction: column;
-        background-color: #222;
-        position: absolute;
-        top: 260px;
-        right: 0;
-        width: 100%;
-        padding: 1rem;
-        z-index: 1000;
-      }
-    
-      .menu-navegacao.show {
-        display: flex;
-      }
-    
-      .menu-toggle {
-        display: block;
-      }
-      
-}

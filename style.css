@@ -141,15 +141,16 @@ header {
 
 .menu-toggle {
     display: none;
-    font-size: 28px;
+    font-size: 2rem;
     background: none;
     border: none;
-    color: #070707;
+    color: var(--cor-titulo);
     cursor: pointer;
-    z-index: 1001;
+    z-index: 101;
     position: absolute;
-    top: 115px;
-    right: 20px;
+    top: 104px;
+    left: 19px;
+    font-weight: 600;
   }
 
 h1 {
@@ -190,7 +191,7 @@ p {
     border-left: solid #00000022 1px;
     box-shadow: 3px 3px 10px #000000fa;
     border-radius: 10px;
-    padding-bottom: 3730px;
+    padding-bottom: 3750px;
 }
 
 .said-bar .lista-dicas {
@@ -203,15 +204,17 @@ p {
 
 .said-bar .lista-dicas li {
     padding: 5px 0;
-    list-style: none;
-    margin-left: -40px;
+    /* list-style: ; */
+    margin-left: -15px; 
+    font-weight: 600;
+    color: var(--cor-titulo);
 }
 
 .said-bar .lista-dicas li:hover {
     color: #000;
     text-decoration: underline;
     transition: all 0.5s ease-in-out;
-    transform: scale(1.1);
+    transform: scale(1.01);
     cursor: pointer;
 }
 
@@ -222,13 +225,15 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    
 }
 
 .said-bar__ods img {
     width: 300px;
     height: 100%;
     box-shadow: 0px 0px 5px #000;
+    margin:20px 0px;
+
 }
 
 .main__principal {

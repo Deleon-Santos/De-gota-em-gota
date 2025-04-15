@@ -1,0 +1,52 @@
+@media (max-width: 680px) {
+  
+    .topo-logo p{
+        font-size: 1.8rem; /* Tamanho da fonte reduzido para telas menores */
+        padding: 0 1%;
+        
+        
+    }
+    .topo-menu__redes-sociais{
+        margin-left: 90px;
+    }
+    .topo-menu__redes-sociais a{
+        font-size: 1.5rem; /* Tamanho da fonte reduzido para telas menores */
+        padding: 0 1.5%;
+        margin-left: 5px;
+    }
+    .menu-navegacao {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 240px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+      }
+    
+      .menu-navegacao.show {
+        display: flex;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+
+      .main-projetos__projetos{
+        display: flex;
+        flex-direction: column; /* Muda para coluna em telas menores */
+      }
+      .main-muvie{
+        width: 100%;
+        height: 100%;
+      }
+      iframe{
+        width: 100%;
+        height: 250px;
+      }
+      .said-bar{
+        width: 87%;
+      }
+}
