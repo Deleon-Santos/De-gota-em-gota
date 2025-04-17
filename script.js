@@ -1,20 +1,16 @@
 
-//   const toggle = document.getElementById('menuToggle');
-//   const menu = document.getElementById('menuNavegacao');
 
-//   toggle.addEventListener('click', () => {
-//     menu.classList.toggle('show');
-//   });
+
   const toggle = document.getElementById('menuToggle');
   const menu = document.getElementById('menuNavegacao');
 
-  // Alternar visibilidade ao clicar no botão
+  
   toggle.addEventListener('click', (e) => {
     e.stopPropagation(); // Evita que o clique no botão feche o menu imediatamente
     menu.classList.toggle('show');
   });
 
-  // Fechar menu se clicar fora dele
+  
   document.addEventListener('click', (e) => {
     const isClickInsideMenu = menu.contains(e.target);
     const isClickOnToggle = toggle.contains(e.target);
@@ -24,6 +20,19 @@
     }
   });
 
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   const menuToggle = document.getElementById('menuToggle');
+  //   const menuNavegacao = document.getElementById('menuNavegacao');
+  
+  //   menuToggle.addEventListener('click', function() {
+  //     menuNavegacao.classList.toggle('show');
+  //     if (menuNavegacao.classList.contains('show')) {
+  //       menuNavegacao.style.maxHeight = menuNavegacao.scrollHeight + 'px';
+  //     } else {
+  //       menuNavegacao.style.maxHeight = '0';
+  //     }
+  //   });
+  // });
 
 
   

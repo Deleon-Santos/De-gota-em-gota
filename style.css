@@ -3,7 +3,7 @@ html{
 }
 :root {
     --cor-fundo-body: #dfedfd77;
-    --cor-fundo-body2: #197ff3d2;
+    --cor-fundo-body2: #197ff3;
     --cor-topo: #ffffff;
     --cor-a: #0000007d;
     --cor-titulo: #212121a9;
@@ -20,7 +20,7 @@ body {
 
 header {
     background-color: var(--cor-fundo-body2);
-    border-bottom: 5px solid #1111115a;
+    border-bottom: 4px solid #1111115a;
     box-shadow: 0px 3px 6px 3px #00000022;
     border-radius: 0 0 10px 10px;
 }
@@ -149,7 +149,7 @@ header {
     z-index: 101;
     position: absolute;
     top: 104px;
-    left: 19px;
+    left: 16px;
     font-weight: 600;
   }
 
@@ -234,6 +234,9 @@ p {
     box-shadow: 0px 0px 5px #000;
     margin:20px 0px;
 
+}
+main .interface{
+    padding-top: 40px;
 }
 
 .main__principal {
