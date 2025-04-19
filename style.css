@@ -255,6 +255,25 @@ main .interface{
     flex-direction: column;
     padding-left: 30px;
 }
+.main__img {
+    position: relative; /* Importante para posicionar as imagens absolutamente dentro */
+   
+    overflow: hidden; /* Esconde as imagens que estão fora da div */
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Inicialmente todas as imagens ficam invisíveis */
+    transition: opacity 1s ease-in-out; /* Adiciona uma transição suave para o efeito de fade */
+  }
+  
+  .slide.ativo {
+    opacity: 1; /* A imagem com a classe 'ativo' fica visível */
+  } 
 
 .main__img {
     min-width: 100%;
