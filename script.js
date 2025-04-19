@@ -20,19 +20,35 @@
     }
   });
 
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   const menuToggle = document.getElementById('menuToggle');
-  //   const menuNavegacao = document.getElementById('menuNavegacao');
+  document.addEventListener('DOMContentLoaded', function() {
+    const botaoTopo = document.getElementById('button-topo');
   
-  //   menuToggle.addEventListener('click', function() {
-  //     menuNavegacao.classList.toggle('show');
-  //     if (menuNavegacao.classList.contains('show')) {
-  //       menuNavegacao.style.maxHeight = menuNavegacao.scrollHeight + 'px';
-  //     } else {
-  //       menuNavegacao.style.maxHeight = '0';
-  //     }
-  //   });
-  // });
+    if (botaoTopo) {
+      // Função para verificar a posição da rolagem e atualizar a visibilidade do botão
+      function verificarPosicaoScroll() {
+        if (window.scrollY === 0) {
+          botaoTopo.style.display = 'none';
+        } else {
+          botaoTopo.style.display = 'block'; // Ou 'flex' ou o display que você estiver usando
+        }
+      }
+  
+      // Chama a função inicialmente para verificar se já estamos no topo
+      verificarPosicaoScroll();
+  
+      // Adiciona um listener para o evento de scroll da janela
+      window.addEventListener('scroll', verificarPosicaoScroll);
+  
+      // Adiciona o listener para o clique no botão para voltar ao topo
+      botaoTopo.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  });
 
 
   

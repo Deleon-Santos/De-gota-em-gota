@@ -312,6 +312,26 @@ main .interface{
     margin: 40px 0;
 }
 
+.button-topo{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #05abab3a;
+    color: #00000080;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #00000080;
+}
+.button-topo:hover{
+    background-color: #05abab;
+    color: #000000;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+
+}
 footer {
     width: 100%;
     background-color: #05abab;

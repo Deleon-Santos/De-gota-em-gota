@@ -7,11 +7,12 @@
         
     }
     .topo-menu__redes-sociais{
-        margin-left: 90px;
+        /* margin-left: 10px; */
+        width:70%
     }
     .topo-menu__redes-sociais a{
         font-size: 1.5rem; 
-        padding: 0 1.5%;
+        padding: 0 1.5%; 
         margin-left: 5px;
     }
     
@@ -21,14 +22,15 @@
     }
 
     .menu-navegacao {
+      max-width: 45%; 
         display: none;
         flex-direction: column;
         background-color:var(--cor-fundo-body2);
         position: absolute;
-        top: 155px;
-        right: 0;
-        width: 100%;
-        padding: 20px ;
+        top: 157px;
+        left: 0;
+        /* width: 300px */
+        /* padding: 20px ; */
         z-index: 1000;
         
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
@@ -41,11 +43,12 @@
       }
       
       .menu-navegacao li{
-        padding: 10px 25px; 
+        padding: 10px 10px; 
         
       }
       .menu-navegacao li a{
         font-size: 1rem;
+        font-weight: 600;
         /* padding: 0 1%; */
         
         
@@ -53,7 +56,7 @@
       .menu-navegacao.show {
         display: block;
         opacity: 1;  
-       width: 95%;
+        /* width: 95%; */
         margin: 0 auto; 
         /* transform: translateY(0);  */
       }
