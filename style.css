@@ -1,6 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --cor-fundo-body: #dfedfd77;
     --cor-fundo-body2: #197ff3;
@@ -9,14 +12,20 @@ html{
     --cor-titulo: #212121a9;
     --cor-geral: #0000007a;
 }
-
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Protest Revolution', sans-serif;
     background-color: var(--cor-fundo-body);
 }
+
+  
 
 header {
     background-color: var(--cor-fundo-body2);
@@ -29,7 +38,7 @@ header {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    max-width: 1024px;
+    max-width: 1440px;
     padding: 15px 4%;
 }
 
@@ -173,8 +182,9 @@ h3 {
 p {
     font-size: 1rem;
     color: var(--cor-geral);
-    font-weight: 600;
+    font-weight: 400;
     text-indent: 20px;
+    letter-spacing:.1rem ;
 }
 
 .said-bar {
@@ -273,7 +283,7 @@ main .interface{
 }
 
 .projetos {
-    max-width: 300px;
+    max-width: 600px;
     height: 450px;
     background-color: #fff;
     display: flex;
@@ -362,9 +372,11 @@ footer .interface {
 
 .footer li {
     list-style: none;
-    margin: 5px 0px;
+    /* margin: 5px 0px; */
 }
-
+.footer__conteudo-extra li{
+    list-style: outside;
+}
 .footer a {
     text-decoration: none;
     
