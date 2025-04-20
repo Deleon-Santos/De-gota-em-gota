@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -12,11 +12,13 @@ html{
     --cor-titulo: #212121a9;
     --cor-geral: #0000007a;
 }
+
 .protest-revolution-regular {
     font-family: "Protest Revolution", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -25,13 +27,11 @@ body {
     background-color: var(--cor-fundo-body);
 }
 
-  
-
 header {
     background-color: var(--cor-fundo-body2);
     border-bottom: 4px solid #1111115a;
     box-shadow: 0px 3px 6px 3px #00000022;
-    border-radius: 0 0 10px 10px;
+    /* border-radius: 0 0 10px 10px; */
 }
 
 .interface {
@@ -65,9 +65,8 @@ header {
 }
 
 .menu-navegacao {
-    width: 960px;
+    width: 760px;
     display: flex;
-    /* padding: 5px 5px 0px 85px; */
     justify-content: space-between;
 }
 
@@ -97,7 +96,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 10px;
 }
 
 .topo-menu__redes-sociais {
@@ -130,7 +129,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-
 }
 
 .topo-logo p {
@@ -160,14 +158,12 @@ header {
     top: 104px;
     left: 16px;
     font-weight: 600;
-  }
+}
 
 h1 {
     font-size: 2rem;
     color: var(--cor-titulo);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    text-align: center; 
     text-shadow: 0px 2px 5px #0000003b;
 }
 
@@ -184,24 +180,16 @@ p {
     color: var(--cor-geral);
     font-weight: 400;
     text-indent: 20px;
-    letter-spacing:.1rem ;
+    letter-spacing: .1rem;
 }
 
 .said-bar {
     width: 400px;
     height: 100%;
-    background-color: var(--cor-topo);
+    background-color: var(--cor-fundo-body);
     display: flex;
     flex-direction: column;
     padding: 0px 20px 0 20px;
-    margin-right: 10px;
-    border-right: 5px solid #05abab;
-    border-top: solid #00000022 1px;
-    border-bottom: solid #00000022 1px;
-    border-left: solid #00000022 1px;
-    box-shadow: 3px 3px 10px #000000fa;
-    border-radius: 10px;
-    padding-bottom: 3750px;
 }
 
 .said-bar .lista-dicas {
@@ -214,8 +202,7 @@ p {
 
 .said-bar .lista-dicas li {
     padding: 5px 0;
-    /* list-style: ; */
-    margin-left: -15px; 
+    margin-left: -15px;
     font-weight: 600;
     color: var(--cor-titulo);
 }
@@ -235,45 +222,45 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 .said-bar__ods img {
     width: 300px;
     height: 100%;
     box-shadow: 0px 0px 5px #000;
-    margin:20px 0px;
-
+    margin: 20px 0px;
 }
-main .interface{
-    padding-top: 40px;
+
+main .interface {
+    padding-top: 20px;   
 }
 
 .main__principal {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left:  40px;
+    border-left: solid #00000022 2px;
 }
+
 .main__img {
-    position: relative; /* Importante para posicionar as imagens absolutamente dentro */
-   
-    overflow: hidden; /* Esconde as imagens que estão fora da div */
-  }
-  
-  .slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0; /* Inicialmente todas as imagens ficam invisíveis */
-    transition: opacity 1s ease-in-out; /* Adiciona uma transição suave para o efeito de fade */
-  }
-  
-  .slide.ativo {
-    opacity: 1; /* A imagem com a classe 'ativo' fica visível */
-  } 
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.ativo {
+    opacity: 1;
+}
 
 .main__img {
     min-width: 100%;
@@ -292,7 +279,8 @@ main .interface{
 }
 
 .main-projetos h3 {
-    border-top: solid #05abab 5px;
+    border-top: solid #05abab 5px;   
+    padding:  10px 0;   
 }
 
 .main-projetos__projetos {
@@ -309,7 +297,7 @@ main .interface{
     flex-direction: column;
     margin-top: 30px;
     box-shadow: 0px 0px 5px #000;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .projetos p {
@@ -319,29 +307,21 @@ main .interface{
 }
 
 .projetos img {
-    border-radius: 10px 10px 0px 0px;
+    /* border-radius: 10px 10px 0px 0px; */
     width: 100%;
     height: 200px;
     box-shadow: 0px 0px 5px #000;
 }
 
-.main-projetos h2 {
-
-    font-size: 1.5rem;
-    margin-top: 10px;
-    color: var(--cor-titulo);
-    text-align: center;
-}
-
 .main-movie {
-    background-color: #05abab;
+    background-color: #000000e8;
     text-align: center;
     width: 100%;
     padding: 25px 0;
     margin: 40px 0;
 }
 
-.button-topo{
+.button-topo {
     position: fixed;
     right: 30px;
     bottom: 30px;
@@ -354,13 +334,14 @@ main .interface{
     cursor: pointer;
     box-shadow: 0px 0px 5px #00000080;
 }
-.button-topo:hover{
+
+.button-topo:hover {
     background-color: #05abab;
     color: #000000;
     transition: all 0.5s ease-in-out;
     transform: scale(1.05);
-
 }
+
 footer {
     width: 100%;
     background-color: #05abab;
@@ -380,29 +361,33 @@ footer .interface {
 }
 
 .footer {
-
     display: flex;
-
     align-items: center;
     flex-direction: column;
     padding: 10px 0px 0px 0px;
     margin: 0px 10px;
+    border: 2px solid #00000022
 }
-
+.footer h3{
+    border-bottom: 2px solid #00000022;
+    padding-bottom: 10px;
+}
+.footer p{
+    margin: 0 15px;
+}
 .footer li {
     list-style: none;
-    /* margin: 5px 0px; */
 }
-.footer__conteudo-extra li{
+
+.footer__conteudo-extra li {
     list-style: outside;
 }
+
 .footer a {
     text-decoration: none;
-    
     font-size: 1rem;
     color: var(--cor-a);
     font-weight: 600;
-
 }
 
 .footer a:hover {
@@ -411,7 +396,6 @@ footer .interface {
 }
 
 .redes-sociais a>i {
-
     margin-top: 10px;
     transition: all 0.5s ease-in-out;
     transform: scale(1.2);
@@ -421,7 +405,6 @@ footer .interface {
 
 .footer__copy {
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;

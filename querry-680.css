@@ -33,6 +33,7 @@
         /* padding: 20px ; */
         z-index: 1000;
         
+        
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
         /* transition: all 0.3s ease-in-out;   */
         border-bottom: solid 4px var(--cor-a); 
@@ -60,7 +61,9 @@
         margin: 0 auto; 
         /* transform: translateY(0);  */
       }
-      
+      .main__principal{
+        border: none;
+      }
       .main-projetos__projetos{
         display: flex;
         flex-direction: column; 
