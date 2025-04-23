@@ -135,7 +135,9 @@ header {
     font-weight: 800;
     font-size: 3rem;
     color: var(--cor-a);
-    margin-left: -20px;
+    margin: 0px; 
+    
+    text-indent: 0;
 }
 
 .topo-logo img {
@@ -163,7 +165,7 @@ header {
 h1 {
     font-size: 2rem;
     color: var(--cor-titulo);
-    text-align: center; 
+    text-align: center;
     text-shadow: 0px 2px 5px #0000003b;
 }
 
@@ -232,17 +234,26 @@ p {
 }
 
 main .interface {
-    padding-top: 20px;   
+    padding-top: 20px;
 }
 
 .main__principal {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left:  40px;
+    padding-left: 40px;
     border-left: solid #00000022 2px;
 }
 
+.buner{
+    width: 100%;
+    height: 500px;
+    background-color: #000000e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 20px;
+}
 .main__img {
     position: relative;
     overflow: hidden;
@@ -279,8 +290,8 @@ main .interface {
 }
 
 .main-projetos h3 {
-    border-top: solid #05abab 5px;   
-    padding:  10px 0;   
+    border-top: solid #05abab 5px;
+    padding: 10px 0;
 }
 
 .main-projetos__projetos {
@@ -297,7 +308,6 @@ main .interface {
     flex-direction: column;
     margin-top: 30px;
     box-shadow: 0px 0px 5px #000;
-    /* border-radius: 10px; */
 }
 
 .projetos p {
@@ -307,7 +317,6 @@ main .interface {
 }
 
 .projetos img {
-    /* border-radius: 10px 10px 0px 0px; */
     width: 100%;
     height: 200px;
     box-shadow: 0px 0px 5px #000;
@@ -338,7 +347,7 @@ main .interface {
 .button-topo:hover {
     background-color: #05abab;
     color: #000000;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out transform 0.5s ease-in-out;
     transform: scale(1.05);
 }
 
@@ -368,13 +377,16 @@ footer .interface {
     margin: 0px 10px;
     border: 2px solid #00000022
 }
-.footer h3{
+
+.footer h3 {
     border-bottom: 2px solid #00000022;
     padding-bottom: 10px;
 }
-.footer p{
+
+.footer p {
     margin: 0 15px;
 }
+
 .footer li {
     list-style: none;
 }

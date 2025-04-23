@@ -1,44 +1,43 @@
 
 @media (max-width: 1024px) {
     .navegacao{
-        flex-direction: column; /* Muda para coluna em telas menores */
-        gap: 20px; /* Adiciona espaçamento entre os itens */
+        flex-direction: column; 
+        gap: 20px; 
         justify-content: left;
-        
-        /* border: solid 1px var(--cor-a); */
     }
     .navegacao ul {
-        width: 100%; /* Largura total da barra de navegação */
-        justify-content: space-between; /* Alinha os itens à esquerda */
+        width: 100%;
+        justify-content: space-between; 
         align-items: center;
-        padding: 0px 20px; /* Remove o padding lateral */
-        margin: 0px 0px 0px 0px; /* Remove a margem negativa */
+        padding: 0px 20px;
+        
     }
     .menu-navegacao a{
         font-size: .9rem;
+        margin-left:1px; 
     }
     .topo-menu__redes-sociais  {
         width: 100%; 
         justify-content: left;
         align-items: left;
-        margin-left: -20px; /* Alinha à esquerda */
+        margin-left: -20px;  
         
     }
     .topo-menu__redes-sociais a{
-        margin-left: 0px; /* Remove a margem esquerda */
-        padding: 5px 20px 5px 5px; /* Ajusta o padding */
-        font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+        /* margin-left: 0px;  */
+        padding: 5px 20px 5px 5px; 
+        font-size: 1.2rem; 
     }
     .principal>.interface{
         flex-direction: column;    
     }
     .said-bar {
-      width: 90%; /* Largura total da barra lateral */
+      width: 90%; 
       flex-direction: column ;
       
       gap:40px;
-      margin: 20px auto; /* Centraliza a barra lateral e adiciona margem */
-      padding: 20px; /* Reduz o padding interno */
+      margin: 20px auto; 
+      padding: 20px; 
      
     }
     .lista-dicas{
