@@ -182,7 +182,7 @@ p {
     color: var(--cor-geral);
     font-weight: 400;
     text-indent: 20px;
-    letter-spacing: .1rem;
+    letter-spacing: .05rem;
 }
 
 .said-bar {
