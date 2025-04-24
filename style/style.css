@@ -225,7 +225,31 @@ p {
     align-items: center;
     flex-direction: column;
 }
+.coleta-seletiva-img img{
+    width: 300px;
+    height: 100%;
+    box-shadow: 0px 0px 5px #000;
+    margin: 20px 0px;
+}
+.ecoponto-img img{
+    width: 300px;
+    height: 100%;
+    box-shadow: 0px 0px 5px #000;
+    margin: 20px 0px;
+}
 
+blockquote{
+    color: var(--cor-geral);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: left;
+    justify-content: left;
+    font-size: .8rem;
+    font-style: italic;
+    text-align: left;
+
+}
 .said-bar__ods img {
     width: 300px;
     height: 100%;

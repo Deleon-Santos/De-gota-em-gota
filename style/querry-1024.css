@@ -80,9 +80,9 @@
       max-width: 100%; /* Garante que a imagem não ultrapasse a largura */
       height: auto;
     }
-  
+   
     .main__principal {
-        
+      border: none;
         width: 96%;
       padding-left: 0; /* Remove o padding esquerdo */
       padding: 15px 2%; /* Adiciona padding lateral */
