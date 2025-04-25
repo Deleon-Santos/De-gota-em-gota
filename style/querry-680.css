@@ -83,6 +83,9 @@
   .said-bar__ods img {
     width: 100%;
   }
+  .ods-img{
+    flex-direction: column;
+  }
   .buner {
     height : 70%;
   }
