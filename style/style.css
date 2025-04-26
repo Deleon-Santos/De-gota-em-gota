@@ -1,32 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 html {
     scroll-behavior: smooth;
 }
 
-
-    
-
-@import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
+    --cor-fundo-topo:aqua;
     --cor-fundo-body: #dfedfd77;
-    --cor-fundo-body2: #197ff3;
+    --cor-fundo-main:rgba(0, 255, 255, 0.29);
+    --cor-fundo-footer: #197ff3;
+    --cor-fundo-said-bar: rgba(124, 255, 255, 0.237);
     --cor-topo: #ffffff;
     --cor-a: #0000007d;
     --cor-titulo: #212121a9;
     --cor-geral: #0000007a;
+    --cor-borda: #00000022;
 }
 
-.protest-revolution-regular {
-    font-family: "Protest Revolution", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Protest Revolution', sans-serif;
+    font-family: sans-serif; 
     background-color: var(--cor-fundo-body);
 }
 
@@ -34,7 +31,6 @@ header {
     background-color:aqua;
     border-bottom: 4px solid #1111115a;
     box-shadow: 0px 3px 6px 3px #00000022;
-    /* border-radius: 0 0 10px 10px; */
 }
 
 .interface {
@@ -148,7 +144,6 @@ header {
     height: 100%;
     border-radius: 50%;
     box-shadow: 2px 2px 3px #000000, 2px -2px 5px #c5a7f4fb;
-
 }
 
 .menu-toggle {
@@ -183,7 +178,6 @@ h3 {
 }
 
 p {
-    /* padding: 5px 0; */
     margin: 10px 0;
     font-size: 1rem;
     color: var(--cor-geral);
@@ -195,7 +189,7 @@ p {
 .said-bar {
     width: 400px;
     height: 100%;
-    background-color: var(--cor-fundo-body);
+    background-color: var(--cor-fundo-said-bar);
     display: flex;
     flex-direction: column;
     padding: 0px 20px 0 20px;
@@ -257,8 +251,7 @@ blockquote{
     text-align: left;
     
 }
-blockquote p{
-    
+blockquote p{  
     text-indent: 0px;
 }
 .said-bar__ods img {
@@ -270,14 +263,15 @@ blockquote p{
 
 main .interface {
     padding-top: 20px;
-}
+} 
 
 .main__principal {
+    background-color: var(--cor-fundo-main);
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-    border-left: solid #00000022 2px;
+    padding: 0 40px;
+    border-left: solid  2px var(--cor-borda);
 }
 
 .buner{
@@ -290,13 +284,8 @@ main .interface {
     border-top: solid 20px;
 }
 
-
-
 .encarte{
-    width: 100%;
-    
-    
-    
+    width: 100%; 
 } 
 
 .main__img {
