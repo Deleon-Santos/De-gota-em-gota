@@ -2,9 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
+
     
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -31,7 +31,7 @@ body {
 }
 
 header {
-    background-color: var(--cor-fundo-body2);
+    background-color:aqua;
     border-bottom: 4px solid #1111115a;
     box-shadow: 0px 3px 6px 3px #00000022;
     /* border-radius: 0 0 10px 10px; */
@@ -137,9 +137,9 @@ header {
 .topo-logo p {
     font-weight: 800;
     font-size: 3rem;
-    color: var(--cor-a);
+    color: var(--cor-titulo);
     margin: 0px; 
-    
+    text-shadow: 0px 2px 5px #00000057;
     text-indent: 0;
 }
 
@@ -289,24 +289,15 @@ main .interface {
     align-items: center;
     border-top: solid 20px;
 }
-.main__img {
-    position: relative;
-    overflow: hidden;
-}
 
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+
+.encarte{
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.slide.ativo {
-    opacity: 1;
-}
+    
+    
+    
+} 
 
 .main__img {
     min-width: 100%;
@@ -419,7 +410,8 @@ footer .interface {
 }
 
 .footer p {
-    margin: 0 15px;
+    margin: 15px 15px;
+
 }
 
 .footer li {
