@@ -6,15 +6,15 @@ html {
 }
 
 :root {
-    --cor-fundo-topo:aqua;
+    --cor-fundo-topo:#05abab;
     --cor-fundo-body: #dfedfd77;
-    --cor-fundo-main:rgba(0, 255, 255, 0.29);
-    --cor-fundo-footer: #197ff3;
-    --cor-fundo-said-bar: rgba(124, 255, 255, 0.237);
+    --cor-fundo-main:rgb(228, 250, 250);
+    --cor-fundo-footer: #05abab;
+    --cor-fundo-said-bar: #b1a4a121;
     --cor-topo: #ffffff;
-    --cor-a: #0000007d;
-    --cor-titulo: #212121a9;
-    --cor-geral: #0000007a;
+    --cor-link: #000000a7;
+    --cor-titulo: #212121eb;
+    --cor-geral: #000000d4;
     --cor-borda: #00000022;
 }
 
@@ -28,8 +28,9 @@ body {
 }
 
 header {
-    background-color:aqua;
-    border-bottom: 4px solid #1111115a;
+    background-color:var(--cor-fundo-topo);
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, var(--cor-fundo-body), rgba(255, 0, 0, 0.724)) 1;
     box-shadow: 0px 3px 6px 3px #00000022;
 }
 
@@ -39,6 +40,32 @@ header {
     justify-content: space-between;
     max-width: 1440px;
     padding: 15px 4%;
+}
+h1 {
+    font-size: 2rem;
+    color: var(--cor-titulo);
+    text-align: center;
+    text-shadow: 0px 2px 5px #0000003b;
+}
+
+h2,
+h3 {
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: var(--cor-titulo);
+    font-weight: 600;
+    text-shadow: 0px 2px 5px #0000003b;
+    
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: var(--cor-geral);
+    font-weight: 400;
+    text-indent: 20px;
+    letter-spacing: .05rem;
 }
 
 .topo-menu {
@@ -75,9 +102,9 @@ header {
 
 .menu-navegacao a {
     text-decoration: none;
-    color: var(--cor-a);
+    color: var(--cor-link);
     font-weight: 600;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     margin-left: -15px;
     padding: 5px 5px 0px 10px;
 }
@@ -106,7 +133,7 @@ header {
 
 .topo-menu__redes-sociais a {
     text-decoration: none;
-    color: var(--cor-a);
+    color: var(--cor-link);
     font-size: 1rem;
     margin-left: 10px;
     padding: 5px 5px opx 10px;
@@ -117,7 +144,7 @@ header {
     color: var(--cor-geral);
     text-decoration: underline;
     transition: all 0.5s ease-in-out;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .topo-logo {
@@ -151,7 +178,7 @@ header {
     font-size: 2rem;
     background: none;
     border: none;
-    color: var(--cor-titulo);
+    color: var(--cor-link);
     cursor: pointer;
     z-index: 101;
     position: absolute;
@@ -160,31 +187,9 @@ header {
     font-weight: 600;
 }
 
-h1 {
-    font-size: 2rem;
-    color: var(--cor-titulo);
-    text-align: center;
-    text-shadow: 0px 2px 5px #0000003b;
-}
 
-h2,
-h3 {
-    padding: 5px 0;
-    margin: 10px 0;
-    font-size: 1.5rem;
-    color: var(--cor-titulo);
-    font-weight: 600;
-    text-shadow: 0px 2px 5px #0000003b;
-}
 
-p {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: var(--cor-geral);
-    font-weight: 400;
-    text-indent: 20px;
-    letter-spacing: .05rem;
-}
+
 
 .said-bar {
     width: 400px;
@@ -193,21 +198,26 @@ p {
     display: flex;
     flex-direction: column;
     padding: 0px 20px 0 20px;
+    box-shadow: 2px 3px 5px #000000fe;
 }
+/* .said-bar >p, h2, blockquote{
+    color: var(--cor-link);
+    text-shadow: #0000003b 0px 2px 5px;
+} */
 
 .said-bar .lista-dicas {
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: first baseline;
+    /* align-items: first baseline; */
 }
 
 .said-bar .lista-dicas li {
     padding: 5px 0;
     margin-left: -15px;
     font-weight: 600;
-    color: var(--cor-titulo);
+    /* color: var(--cor-topo); */
 }
 
 .said-bar .lista-dicas li:hover {
@@ -262,7 +272,7 @@ blockquote p{
 }
 
 main .interface {
-    padding-top: 20px;
+    padding-top: 0px;
 } 
 
 .main__principal {
@@ -272,6 +282,7 @@ main .interface {
     flex-direction: column;
     padding: 0 40px;
     border-left: solid  2px var(--cor-borda);
+    border-right: solid 2px var(--cor-borda);
 }
 
 .buner{
@@ -282,13 +293,17 @@ main .interface {
     justify-content: center;
     align-items: center;
     border-top: solid 20px;
+    border-bottom: solid 20px;
+
 }
 
 .encarte{
     width: 100%; 
+    border: var(--cor-borda) solid 2px;
+    box-shadow: 2px 3px 5px #000000ad;
 } 
 
-.main__img {
+/* .main__img {
     min-width: 100%;
 }
 
@@ -297,17 +312,18 @@ main .interface {
     height: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #000;
-}
+} */
 
 .main-projetos h2 {
+    /* color: var(--cor-titulo); */
     padding-top: 30px;
     border-top: solid #00000022 2px;
 }
 
-.main-projetos h3 {
-    border-top: solid #05abab 5px;
+/* .main-projetos h3 {
+    border-top: solid  5px var(--cor-borda);
     padding: 10px 0;
-}
+}  */
 
 .main-projetos__projetos {
     display: grid;
@@ -318,11 +334,12 @@ main .interface {
 .projetos {
     max-width: 600px;
     height: 450px;
-    background-color: #fff;
+    background-color: var(--cor-topo);
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    box-shadow: 0px 0px 5px #00000018;
+    box-shadow: 2px 3px 5px #000000ad;
+    padding: 3px;
 }
 
 .projetos p {
@@ -343,6 +360,7 @@ main .interface {
     width: 100%;
     padding: 25px 0;
     margin: 40px 0;
+    box-shadow: 2px 3px 5px #000000ad;
 }
 
 .button-topo {
@@ -368,7 +386,7 @@ main .interface {
 
 footer {
     width: 100%;
-    background-color: #05abab;
+    background-color: var(--cor-fundo-footer);
     color: #030303;
     font-size: 1rem;
     margin-top: 30px;
@@ -389,7 +407,7 @@ footer .interface {
     align-items: center;
     flex-direction: column;
     padding: 10px 0px 0px 0px;
-    margin: 0px 10px;
+    margin: 0px 0px;
     border: 2px solid #00000022
 }
 
@@ -411,11 +429,12 @@ footer .interface {
     list-style: outside;
 }
 
-.footer a {
+.footer a, li, p {
     text-decoration: none;
     font-size: 1rem;
-    color: var(--cor-a);
-    font-weight: 600;
+    color: var(--cor-link);
+    font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .footer a:hover {
@@ -424,7 +443,7 @@ footer .interface {
 }
 
 .redes-sociais a>i {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     transition: all 0.5s ease-in-out;
     transform: scale(1.2);
     margin-left: -40px;

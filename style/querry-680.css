@@ -39,11 +39,13 @@
 
   .menu-navegacao li {
     padding: 10px 0px;
+    
   }
 
   .menu-navegacao li a {
     font-size: 1rem;
     font-weight: 600;
+    padding-left: 0;
   }
 
   .menu-navegacao.show {
@@ -54,9 +56,13 @@
     
     transform: translatey(1px);
   }
+  
 
+  
   .main__principal {
     border: none;
+    padding: 4%;
+    
   }
 
   .main-projetos__projetos {
@@ -75,7 +81,7 @@
   }
 
   .said-bar {
-    width: 85%;
+    width: 86%;
   }
 
   .said-bar__ods {
