@@ -197,7 +197,7 @@ p {
     background-color: var(--cor-fundo-said-bar);
     display: flex;
     flex-direction: column;
-    padding: 0px 20px 0 20px;
+    padding: 10px 20px 10px 20px;
     box-shadow: 2px 3px 5px #000000fe;
 }
 /* .said-bar >p, h2, blockquote{
