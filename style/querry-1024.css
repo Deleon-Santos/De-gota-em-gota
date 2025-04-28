@@ -37,7 +37,9 @@
   }
 
   .said-bar {
+    
     width: 90%;
+    padding: 0px 4%;
     flex-direction: column;
 
     gap: 40px;
