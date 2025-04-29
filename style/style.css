@@ -42,6 +42,7 @@ header {
     padding: 15px 4%;
 }
 h1 {
+    margin-bottom: 15px;
     font-size: 2rem;
     color: var(--cor-titulo);
     text-align: center;
@@ -298,9 +299,12 @@ main .interface {
 }
 
 .encarte{
+
     width: 100%; 
     border: var(--cor-borda) solid 2px;
     box-shadow: 2px 3px 5px #000000ad;
+    margin-bottom: 15px ;
+    margin-top: -15px;
 } 
 
 /* .main__img {
@@ -316,7 +320,7 @@ main .interface {
 
 .main-projetos h2 {
     /* color: var(--cor-titulo); */
-    padding-top: 30px;
+    padding-top: 20px;
     border-top: solid #00000022 2px;
 }
 
@@ -326,6 +330,7 @@ main .interface {
 }  */
 
 .main-projetos__projetos {
+    margin-top: -20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;

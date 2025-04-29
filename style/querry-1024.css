@@ -35,15 +35,20 @@
   .principal>.interface {
     flex-direction: column;
   }
-
+  .principal{
+    background-color: var(--cor-fundo-said-bar);
+}
   .said-bar {
-    width: 88%;
+    /* display: flex; */
+    width: 92%;
+    /* justify-content: center; */
     flex-direction: column;
-
-    gap: 40px;
-    margin: 0px 4%;
-    padding: 10PX 15px;
-
+    /* align-items: center; */
+    /* gap: 20px; */
+    margin: 0px 4%;  
+    padding: 10PX 0px;
+    box-shadow: none;
+    background-color:transparent;
   }
 
   .lista-dicas {
@@ -139,7 +144,7 @@
   .projetos {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   .projetos img {
@@ -158,7 +163,7 @@
   }
 
   .footer {
-    margin: 10px;
+    /* margin: 10px; */
     padding-bottom: 10px;
   }
 

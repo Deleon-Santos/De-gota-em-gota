@@ -61,13 +61,16 @@
   
   .main__principal {
     border: none;
-    padding: 4%;
-    
+    padding: 0px 4%;
+    gap: 5px;
   }
-
+  
   .main-projetos__projetos {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    
+    
   }
 
   .main-muvie {
@@ -81,7 +84,7 @@
   }
 
   .said-bar {
-    width: 86%;
+    width: 92%;
   }
 
   .said-bar__ods {
@@ -91,6 +94,7 @@
 
   .said-bar__ods img {
     width: 100%;
+    margin-bottom: 0px ;
   }
   .ods-img{
     flex-direction: column;
