@@ -19,6 +19,7 @@
   }
 
   .topo-menu__redes-sociais {
+    display: none;
     width: 100%;
     justify-content: left;
     align-items: left;
