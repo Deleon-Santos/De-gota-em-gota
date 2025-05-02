@@ -3,9 +3,11 @@
     font-size: 2rem;
     padding: 0 1%;
   }
-  .navegacao{
+
+  .navegacao {
     height: 30px;
   }
+
   .topo-menu__redes-sociais {
     display: none;
     width: 70%;
@@ -19,7 +21,7 @@
     opacity: 0;
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(to right, var(--cor-fundo-body), rgba(255, 0, 0, 0.724)) 1;
-    transition:all  0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: translatex(-30px);
     box-shadow: 0px 2px 3px 3px #00000088;
   }
@@ -28,7 +30,7 @@
     font-size: 1.5rem;
     padding: 0 1.5%;
     margin-left: 5px;
-  } 
+  }
 
   .menu-toggle {
     display: block;
@@ -49,14 +51,13 @@
     opacity: 0;
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(to right, var(--cor-fundo-body), rgba(255, 0, 0, 0.724)) 1;
-    transition:all  0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: translatex(-30px);
     box-shadow: 0px 2px 3px 3px #00000088;
   }
 
   .menu-navegacao li {
     padding: 10px 0px;
-    
   }
 
   .menu-navegacao li a {
@@ -67,27 +68,22 @@
 
   .menu-navegacao.show {
     display: block;
-    opacity: 1; 
+    opacity: 1;
     margin: 0 auto;
     transition: all 0.2s ease-in-out;
-    
     transform: translatey(3px);
   }
-  
 
-  
   .main__principal {
     border: none;
     padding: 0px 4%;
     gap: 5px;
   }
-  
+
   .main-projetos__projetos {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    
-    
   }
 
   .main-muvie {
@@ -100,6 +96,10 @@
     height: 250px;
   }
 
+  #muvie-vida-agua {
+    margin-bottom: 30px;
+  }
+
   .said-bar {
     width: 92%;
   }
@@ -107,30 +107,38 @@
   .said-bar__ods {
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
   }
 
   .said-bar__ods img {
     width: 100%;
-    margin-bottom: 0px ;
+    margin-bottom: 0px;
+
   }
-  .ods-img{
+
+  .ods-img {
     flex-direction: column;
+    gap: 0px;
   }
+
   .buner {
-    height : 70%;
+    height: 70%;
   }
+
   .ecoponto__container {
     display: flex;
     flex-direction: column;
-    
-
+    gap: 5px;
+    padding-top: 10px;
   }
+
+  .ecoponto__container img {
+    margin-top: 0px;
+  }
+
   .ecoponto-texto {
     width: 100%;
-    /* display: flex; */
     flex-direction: column;
     padding: 0;
-    
-
   }
 }

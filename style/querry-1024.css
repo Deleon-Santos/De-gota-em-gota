@@ -10,7 +10,6 @@
     justify-content: left;
     align-items: center;
     padding: 0px 20px;
-
   }
 
   .menu-navegacao a {
@@ -24,11 +23,9 @@
     justify-content: left;
     align-items: left;
     margin-left: -20px;
-
   }
 
   .topo-menu__redes-sociais a {
-    /* margin-left: 0px;  */
     padding: 5px 20px 5px 5px;
     font-size: 1.2rem;
   }
@@ -36,16 +33,18 @@
   .principal>.interface {
     flex-direction: column;
   }
-  .principal{
+
+  .principal {
     background-color: var(--cor-fundo-said-bar);
   }
+
   .said-bar {
     width: 92%;
     flex-direction: column;
-    margin: 0px 4%;  
+    margin: 0px 4%;
     padding: 10PX 0px;
     box-shadow: none;
-    background-color:transparent;
+    background-color: transparent;
   }
 
   .lista-dicas {
@@ -58,16 +57,15 @@
     padding-bottom: 30px;
   }
 
-  .ods-img  {
+  .ods-img {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    margin: 0 ; 
+    margin: 0;
     gap: 40px;
-    padding: 0 ; 
+    padding: 0;
   }
-
 
   .said-bar .lista-dicas li {
     margin-left: -40;
@@ -78,8 +76,7 @@
   .said-bar__ods h2 {
     margin-top: 0px;
   }
-  
-  
+
   .said-bar__ods img {
     max-width: 100%;
     height: auto;
@@ -91,14 +88,15 @@
     gap: 20px;
     width: 100%;
     justify-content: space-between;
-
+    padding-top: 10px;
+    padding-bottom: 0px;
   }
 
   .ecoponto__container img {
     width: 100%;
     height: 85%;
     box-shadow: 0px 0px 5px #00000045;
-
+    margin-top: 20px;
   }
 
   .ecoponto-texto {
@@ -106,6 +104,7 @@
     flex-direction: column;
     padding: 20px;
     gap: 20px;
+    padding-bottom: 0px;
   }
 
   .ecoponto-texto p {
@@ -118,10 +117,9 @@
     margin-bottom: 20px;
   }
 
-  .principal .interface{
-    
+  .principal .interface {
     margin: 0;
-    padding: 0  ;
+    padding: 0;
   }
 
   .main__principal {
@@ -166,5 +164,12 @@
 
   .footer__copy {
     font-size: .9rem;
+  }
+
+  .footer__copy span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
   }
 }
