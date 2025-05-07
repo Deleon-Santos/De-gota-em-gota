@@ -182,7 +182,7 @@ p {
     z-index: 101;
     position: absolute;
     top: 104px;
-    left: 17px;
+    left: 4%;
     font-weight: 600;
     padding-left: 0px;
 }
@@ -308,7 +308,7 @@ main .interface {
     border: var(--cor-borda) solid 2px;
     box-shadow: 2px 3px 5px #000000ad;
     margin-bottom: 15px;
-    margin-top: -15px;
+    margin-top: 15px;
 }
 
 .main-projetos h2 {
