@@ -237,7 +237,7 @@ p {
     margin: 10px 0px;
 }
 
-.ecoponto-img img {
+.ecoponto-img iframe {
     width: 300px;
     height: 100%;
     box-shadow: 0px 0px 5px #000;
@@ -261,11 +261,13 @@ blockquote p {
     padding: 0px 0px;
 }
 
+
 .said-bar__ods img {
     width: 300px;
     height: 100%;
     box-shadow: 0px 0px 5px #000;
     margin-top: 20px;
+    padding-top: 20px;
 }
 
 #ods-text {

@@ -91,7 +91,7 @@
     height: 100%;
   }
 
-  iframe {
+  .video {
     width: 100%;
     height: 250px;
   }
@@ -132,7 +132,9 @@
     padding-top: 10px;
   }
 
-  .ecoponto__container img {
+  .ecoponto__container iframe {
+    width: 100%;
+    height: 250px;
     margin-top: 0px;
   }
 
