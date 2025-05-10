@@ -89,7 +89,7 @@
     width: 100%;
     justify-content: space-between;
     padding-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
   }
 
   .ecoponto__container img {
@@ -155,7 +155,8 @@
     grid-template-columns: 1fr;
     padding: 0 4%;
     gap: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
+    
   }
 
   .footer {
@@ -172,4 +173,9 @@
     align-items: center;
     margin-bottom: 10px;
   }
+  .footer__copy span a {
+    margin: 0;
+    
+  }
+  
 }
