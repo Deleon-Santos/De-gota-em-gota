@@ -173,6 +173,7 @@ p {
 }
 
 .menu-toggle {
+    
     display: none;
     font-size: 2rem;
     background: none;
@@ -180,11 +181,12 @@ p {
     color: var(--cor-link);
     cursor: pointer;
     z-index: 101;
-    position: absolute;
-    top: 530px;
+    position: relative;
+    top: 0px;
     left: 4%;
     font-weight: 600;
     padding-left: 0px;
+    margin-left: 0px;
 }
 
 .said-bar {

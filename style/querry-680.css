@@ -7,6 +7,7 @@
   .navegacao {
     height: 30px;
   }
+  
 
   .topo-menu__redes-sociais {
     display: none;
@@ -34,6 +35,7 @@
 
   .menu-toggle {
     display: block;
+    
   }
 
   .menu-navegacao {
