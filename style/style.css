@@ -227,7 +227,7 @@ p {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
 
 }
@@ -263,7 +263,45 @@ blockquote p {
     padding: 0px 0px;
 }
 
-
+.leia-me__lista{
+    margin: 0px 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.leia-me__lista li {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 0px;
+    font-size: .9rem;
+    color: var(--cor-geral);
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: .03rem;
+    cursor: pointer;
+    padding: 3px 0;
+}
+.leia-me__lista a{
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.671);
+   
+}
+.leia-me__lista li:hover {
+    color:rgba(0, 0, 255, 0.671);
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.leia-me{
+    font-weight: 400;
+    font-style: italic;
+    color: var(--cor-geral);
+    font-size: 1rem;
+    padding-top: 0px;
+}
 .said-bar__ods img {
     width: 300px;
     height: 100%;
