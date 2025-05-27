@@ -1,0 +1,19 @@
+
+        
+def calcular(operaveis):
+    try:
+        operadores = ["+", "-", "*", "/"]
+        for operador in operadores:
+            if operador in operaveis:
+                numero_1, numero_2 = operaveis.split(operador)
+                return eval (f"{numero_1}{operador}{numero_2}")
+        return "Operador invalido"
+    except ZeroDivisionError:
+        return "Divisao por zero nao e permitida"
+   
+# operacao = Calculadora()
+equalizer = calcular('10+20-10*2/5')
+if isinstance(equalizer, float):
+    print(f"{equalizer:.1f}")
+else:
+    print(equalizer)

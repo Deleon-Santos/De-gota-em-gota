@@ -55,7 +55,7 @@ h3 {
     margin: 10px 0;
     font-size: 1.5rem;
     color: var(--cor-titulo);
-    font-weight: 600;
+    font-weight: 400;
     text-shadow: 0px 2px 5px #0000003b;
 }
 
@@ -103,7 +103,7 @@ p {
 .menu-navegacao a {
     text-decoration: none;
     color: var(--cor-link);
-    font-weight: 600;
+    font-weight: 400;
     margin-left: -15px;
     padding: 5px 5px
 }
@@ -157,8 +157,8 @@ p {
 }
 
 .topo-logo p {
-    font-weight: 800;
-    font-size: 3rem;
+    font-weight: 50;
+    font-size: 4rem;
     color: var(--cor-titulo);
     margin: 0px;
     text-shadow: 0px 2px 5px #00000057;
@@ -173,6 +173,7 @@ p {
 }
 
 .menu-toggle {
+    
     display: none;
     font-size: 2rem;
     background: none;
@@ -180,11 +181,12 @@ p {
     color: var(--cor-link);
     cursor: pointer;
     z-index: 101;
-    position: absolute;
-    top: 104px;
-    left: 4%;
+    position: relative;
+    top: 0px;
+    right: 4%;
     font-weight: 600;
     padding-left: 0px;
+    margin-left: 0px;
 }
 
 .said-bar {
