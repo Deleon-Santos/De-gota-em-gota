@@ -197,7 +197,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 10px 20px 10px 20px;
-    box-shadow: 2px 3px 5px #000000fe;
+    box-shadow: 2px 30px 50px #0000003a;
 
 }
 
@@ -236,14 +236,14 @@ p {
 .coleta-seletiva-img img {
     width: 100%;
     height: 100%;
-    box-shadow: 0px 0px 5px #000;
+    box-shadow: 2px 30px 50px #0000003a;
     margin: 10px 0px;
 }
 
 .ecoponto-img iframe {
     width: 300px;
     height: 100%;
-    box-shadow: 0px 0px 5px #000;
+    box-shadow: 2px 30px 50px #0000003a;
     margin: 5px 0px;
 }
 
@@ -349,7 +349,7 @@ main .interface {
 .encarte {
     width: 100%;
     border: var(--cor-borda) solid 2px;
-    box-shadow: 2px 3px 5px #000000ad;
+    box-shadow: 2px 30px 50px #0000003a;
     margin-bottom: 25px;
     margin-top: 15px;
 }
@@ -393,7 +393,7 @@ main .interface {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    box-shadow: 2px 3px 5px #000000ad;
+    box-shadow: 2px 30px 30px #0000003a;
     padding: 3px;
 }
 
