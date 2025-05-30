@@ -1,4 +1,7 @@
 @media (max-width: 1080px) {
+  .buner{
+    height: 250px;
+  }
   .navegacao {
     flex-direction: column;
     gap: 15px;
