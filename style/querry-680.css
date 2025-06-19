@@ -1,20 +1,24 @@
 @media (max-width: 680px) {
-  .topo-logo p {
-    font-size: 2rem;
-    padding: 0 1%;
+  .topo-menu .topo-logo{
+    width: 50%;
+  }
+  .topo-menu .topo-logo h1{
+      font-weight: 600;
+      font-size: 2.5rem; 
+  }
+  .topo-menu .topo-logo h2{
+      font-size: 1.5rem;    
   }
 
   .navegacao {
     height: 30px;
-    align-items: start;
-    
+    align-items: start; 
   }
  
   .buner{
     height: 200px;
   }
  
-
   .topo-menu__redes-sociais a {
     font-size: 1.5rem;
     padding: 0 1.5%;
@@ -23,7 +27,6 @@
 
   .menu-toggle {
     display: block;
-    /* margin-left: 4%; */
   }
 
   .menu-navegacao {

@@ -1,6 +1,15 @@
 @media (max-width: 1080px) {
+  .topo-menu .topo-logo{
+    width: 40%;
+  }
+  .topo-menu .topo-logo h1{
+      font-size: 3rem;    
+  }
+  .topo-menu .topo-logo h2{
+      font-size: 1.5rem;    
+  }
   .buner{
-    height: 250px;
+      height: 250px;
   }
   .navegacao {
     flex-direction: column;
@@ -17,7 +26,8 @@
 
   .menu-navegacao a {
     font-size: .9rem;
-    margin-left: 1px;
+    margin-left: 5px;
+    
   }
 
   .topo-menu__redes-sociais {

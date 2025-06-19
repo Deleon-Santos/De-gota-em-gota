@@ -41,7 +41,7 @@ header {
     padding: 15px 4%;
 }
 
-h1 {
+ body h1 {
     margin-bottom: 15px;
     font-size: 2rem;
     color: var(--cor-titulo);
@@ -49,7 +49,7 @@ h1 {
     text-shadow: 0px 2px 5px #0000003b;
 }
 
-h2,
+body h2,
 h3 {
     padding: 5px 0;
     margin: 10px 0;
@@ -147,32 +147,35 @@ p {
     transform: scale(1.05);
 }
 
-.topo-logo {
-    width: 100%;
-    height: 80px;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-}
 
-.topo-logo p {
-    font-weight: 50;
+
+.topo-menu .topo-logo h1,
+.topo-menu .topo-logo h2 {
+    font-weight: 600;
     font-size: 4rem;
-    color: var(--cor-titulo);
+    color: white;
     margin: 0px;
-    text-shadow: 0px 2px 5px #00000057;
+    text-shadow: 0px 10px 5px #00000057;
     text-indent: 0;
+    text-align: left;
+}
+.topo-menu .topo-logo h2{
+    font-size: 2.5rem;
+    padding-top: 20px;
 }
 
-.topo-logo img {
-    width: 80;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 2px 2px 3px #000000, 2px -2px 5px #c5a7f4fb;
-}
+.topo-menu .topo-logo {
+    align-items: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column ;
+    position: absolute;
+    width: 30%;
+    /* height: 400px; */
+    top: 40px;
 
+}
+    
 .menu-toggle {
     
     display: none;
@@ -183,7 +186,7 @@ p {
     cursor: pointer;
     z-index: 101;
     position: relative;
-    top: 0px;
+    top: -10px;
     left: 0;
     font-weight: 600;
     padding-left: 0px;
