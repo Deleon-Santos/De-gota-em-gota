@@ -17,7 +17,7 @@ html {
     --cor-topo: #ffffff;
     --cor-link: #000000a7;
     --cor-titulo: #212121eb;
-    --cor-geral: #000000f3;
+    --cor-geral: #000000c1;
     --cor-borda: #00000022;
 }
 
@@ -59,7 +59,7 @@ p {
     margin: 10px 0;
     font-size: 1rem;
     color: var(--cor-geral);
-    font-weight: 600;
+    font-weight: 200;
     text-indent: 20px;
     letter-spacing: .05rem;
 }
@@ -94,21 +94,25 @@ p {
 
 .menu-navegacao li {
     list-style: none;
+    padding-bottom: 0px;
 }
 
 .menu-navegacao a {
+    display:flex;
     text-decoration: none;
     color: var(--cor-link);
     font-weight: 400;
     margin-left: -15px;
-    padding: 5px 5px
+    padding: 5px 5px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* transform fica aqui como padrão (neutro) */
+    transform: scale();
 }
 
 .menu-navegacao a:hover {
     color: var(--cor-geral);
     text-decoration: underline;
-    transition: all 0.5s ease-in-out;
-    transform: scale(1.2);
+    transform: scale(1.02)
 }
 
 .navegacao {
@@ -126,20 +130,21 @@ p {
     align-items: right;
 }
 
-.topo-menu__redes-sociais a {
+.topo-menu__redes-sociais i {
     text-decoration: none;
     color: var(--cor-link);
     font-size: 1rem;
     margin-left: 10px;
-    padding: 5px 5px 0px 10px;
+    padding: 5px 5px 0px 20px;
     border-radius: 5px;
 }
 
-.topo-menu__redes-sociais a:hover {
+.topo-menu__redes-sociais i:hover {
     color: var(--cor-geral);
     text-decoration: underline;
     transition: all 0.5s ease-in-out;
     transform: scale(1.05);
+    
 }
 
 
