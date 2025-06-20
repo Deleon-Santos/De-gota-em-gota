@@ -1,13 +1,24 @@
 @media (max-width: 680px) {
-  .topo-logo p {
-    font-size: 1.8rem;
-    padding: 0 1%;
+  .topo-menu .topo-logo{
+    width: 50%;
+  }
+  .topo-menu .topo-logo h1{
+      font-weight: 600;
+      font-size: 2.2rem; 
+  }
+  .topo-menu .topo-logo h2{
+      font-size: 1.5rem;    
   }
 
-  .topo-menu__redes-sociais {
-    width: 70%
+  .navegacao {
+    height: 30px;
+    align-items: start; 
   }
-
+ 
+  .buner{
+    height: 200px;
+  }
+ 
   .topo-menu__redes-sociais a {
     font-size: 1.5rem;
     padding: 0 1.5%;
@@ -19,28 +30,33 @@
   }
 
   .menu-navegacao {
-    max-width: 50%;
+    max-width: 90%;
     display: none;
     flex-direction: column;
-    background-color: var(--cor-fundo-body2);
-    position: absolute;
-    top: 157px;
-    left: 0;
-    z-index: 1000;
+    background-color: var(--cor-fundo-main);
+    position: relative;
+    top: -15px;
+    left: -5%;
+    z-index: 1001;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-bottom: solid 4px var(--cor-a);
     z-index: 1000;
     opacity: 0;
-    
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, var(--cor-fundo-body), rgba(255, 0, 0, 0.724)) 1;
+    transition: all 0.2s ease-in-out;
+    transform: translatex(-30px);
+    box-shadow: 0px 2px 3px 3px #00000088;
   }
 
   .menu-navegacao li {
-    padding: 10px 0px;
+    padding: 8px 0px;
   }
 
   .menu-navegacao li a {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
+    padding-left: 0px;
   }
 
   .menu-navegacao.show {
@@ -48,17 +64,19 @@
     opacity: 1;
     margin: 0 auto;
     transition: all 0.2s ease-in-out;
-    
-    transform: translatey(1px);
+    transform: translatey(3px);
   }
 
   .main__principal {
     border: none;
+    padding: 0px 4%;
+    gap: 5px;
   }
 
   .main-projetos__projetos {
     display: flex;
     flex-direction: column;
+    gap: 5px;
   }
 
   .main-muvie {
@@ -66,41 +84,58 @@
     height: 100%;
   }
 
-  iframe {
+  .video {
     width: 100%;
     height: 250px;
   }
 
+  #muvie-vida-agua {
+    margin-bottom: 30px;
+  }
+
   .said-bar {
-    width: 89%;
+    width: 92%;
+    padding-bottom: 30px;
   }
 
   .said-bar__ods {
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
   }
 
   .said-bar__ods img {
     width: 100%;
+    margin-bottom: 0px;
+
   }
-  .ods-img{
+
+  .ods-img {
     flex-direction: column;
+    gap: 0px;
   }
+
   .buner {
-    height : 70%;
+    height: 70%;
   }
+
   .ecoponto__container {
     display: flex;
     flex-direction: column;
-    
-
+    gap: 5px;
+    padding-top: 10px;
+    border-bottom: solid 1px var(--cor-link);
   }
+
+  .ecoponto__container iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 0px;
+  }
+
   .ecoponto-texto {
     width: 100%;
-    /* display: flex; */
     flex-direction: column;
     padding: 0;
-    
-
   }
 }
