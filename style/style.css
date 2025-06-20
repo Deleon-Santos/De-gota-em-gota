@@ -105,7 +105,7 @@ p {
     margin-left: -15px;
     padding: 5px 5px;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    /* transform fica aqui como padrão (neutro) */
+
     transform: scale();
 }
 
@@ -146,8 +146,6 @@ p {
     transform: scale(1.05);
     
 }
-
-
 
 .topo-menu .topo-logo h1,
 .topo-menu .topo-logo h2 {
@@ -341,19 +339,15 @@ main .interface {
     border-bottom: solid 1px;
 }
 
-main.encarte {
+main .encarte {
     gap: 20px;
     display: flex;
     flex-direction: column;
-    border: var(--cor-borda) solid 2px;
-    box-shadow: 2px 30px 50px #0000003a;
     padding: 40px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    padding-top: 2px;
 }
 .encarte img {
     width: 100%;
-    padding: 20px 0;
 }
 main .encarte h2, main .encarte p {
     font-family: "bebas neue", sans-serif;
@@ -372,7 +366,9 @@ main .encarte p{
 .main-projetos h2 {
     padding-top: 20px;
 }
-
+ main h1{
+    margin-bottom: 10px;
+ }
 .subtitulo {
     display: flex;
     width: 250px;
