@@ -341,12 +341,32 @@ main .interface {
     border-bottom: solid 1px;
 }
 
-.encarte {
-    width: 100%;
+main.encarte {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
     border: var(--cor-borda) solid 2px;
     box-shadow: 2px 30px 50px #0000003a;
-    margin-bottom: 25px;
+    padding: 40px;
+    margin-bottom: 15px;
     margin-top: 15px;
+}
+.encarte img {
+    width: 100%;
+    padding: 20px 0;
+}
+main .encarte h2, main .encarte p {
+    font-family: "bebas neue", sans-serif;
+    text-align: left;
+    color: var(--cor-fundo-footer);
+    font-weight: 900;
+    text-indent: 0px;
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;   
+}
+main .encarte p{
+    font-size: 2rem;
 }
 
 .main-projetos h2 {
@@ -495,7 +515,6 @@ li {
 }
 
 .menu-navegacao-footer {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
