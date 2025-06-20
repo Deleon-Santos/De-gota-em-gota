@@ -4,7 +4,7 @@
   }
   .topo-menu .topo-logo h1{
       font-weight: 600;
-      font-size: 2.5rem; 
+      font-size: 2.2rem; 
   }
   .topo-menu .topo-logo h2{
       font-size: 1.5rem;    
@@ -33,7 +33,7 @@
     max-width: 90%;
     display: none;
     flex-direction: column;
-    background-color: var(--cor-fundo-topo);
+    background-color: var(--cor-fundo-main);
     position: relative;
     top: -15px;
     left: -5%;
@@ -95,6 +95,7 @@
 
   .said-bar {
     width: 92%;
+    padding-bottom: 30px;
   }
 
   .said-bar__ods {
@@ -123,6 +124,7 @@
     flex-direction: column;
     gap: 5px;
     padding-top: 10px;
+    border-bottom: solid 1px var(--cor-link);
   }
 
   .ecoponto__container iframe {

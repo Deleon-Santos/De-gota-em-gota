@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Micro+5+Charted&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 html {
     scroll-behavior: smooth;
@@ -8,13 +10,14 @@ html {
 :root {
     --cor-fundo-topo: #05abab;
     --cor-fundo-body: #dfedfd77;
-    --cor-fundo-main: rgb(228, 250, 250);
+    /* --cor-fundo-main: rgb(228, 250, 250); */
+    --cor-fundo-main: rgb(255, 255, 255);
     --cor-fundo-footer: #05abab;
     --cor-fundo-said-bar: #b1a4a121;
     --cor-topo: #ffffff;
     --cor-link: #000000a7;
     --cor-titulo: #212121eb;
-    --cor-geral: #000000d4;
+    --cor-geral: #000000f3;
     --cor-borda: #00000022;
 }
 
@@ -26,10 +29,11 @@ body {
     background-color: var(--cor-fundo-body);
 }
 
+
 header {
-    background-color: var(--cor-fundo-topo);
+    background-color: var(--cor-fundo-main);
     border-bottom: 5px solid transparent;
-    border-image: linear-gradient(to right, var(--cor-fundo-body), rgba(255, 0, 0, 0.724)) 1;
+    border-image: linear-gradient(to right, var(--cor-fundo-topo), rgba(255, 0, 0, 0.724)) 1;
     box-shadow: 0px 3px 6px 3px #00000022;
 }
 
@@ -41,21 +45,12 @@ header {
     padding: 15px 4%;
 }
 
- body h1 {
-    margin-bottom: 15px;
-    font-size: 2rem;
-    color: var(--cor-titulo);
-    text-align: center;
-    text-shadow: 0px 2px 5px #0000003b;
-}
-
 body h2,
 h3 {
     padding: 5px 0;
     margin: 10px 0;
     font-size: 1.5rem;
     color: var(--cor-titulo);
-    font-weight: 400;
     font-weight: 400;
     text-shadow: 0px 2px 5px #0000003b;
 }
@@ -64,7 +59,7 @@ p {
     margin: 10px 0;
     font-size: 1rem;
     color: var(--cor-geral);
-    font-weight: 400;
+    font-weight: 600;
     text-indent: 20px;
     letter-spacing: .05rem;
 }
@@ -136,7 +131,7 @@ p {
     color: var(--cor-link);
     font-size: 1rem;
     margin-left: 10px;
-    padding: 5px 5px opx 10px;
+    padding: 5px 5px 0px 10px;
     border-radius: 5px;
 }
 
@@ -151,15 +146,18 @@ p {
 
 .topo-menu .topo-logo h1,
 .topo-menu .topo-logo h2 {
-    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: inherit;
+    font-weight: bolder;
     font-size: 4rem;
     color: white;
     margin: 0px;
-    text-shadow: 0px 10px 5px #00000057;
+    text-shadow: 0px 10px 5px #000000c0;
     text-indent: 0;
     text-align: left;
 }
-.topo-menu .topo-logo h2{
+
+.topo-menu .topo-logo h2 {
     font-size: 2.5rem;
     padding-top: 20px;
 }
@@ -168,16 +166,13 @@ p {
     align-items: left;
     justify-content: center;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     position: absolute;
     width: 30%;
-    /* height: 400px; */
     top: 40px;
-
 }
-    
+
 .menu-toggle {
-    
     display: none;
     font-size: 2rem;
     background: none;
@@ -201,7 +196,6 @@ p {
     flex-direction: column;
     padding: 10px 20px 10px 20px;
     box-shadow: 2px 30px 50px #0000003a;
-
 }
 
 .said-bar .lista-dicas {
@@ -213,17 +207,9 @@ p {
 }
 
 .said-bar .lista-dicas li {
-    margin-left: -40px;
+    margin-left: -25px;
     font-weight: 600;
-    list-style: inside;
-}
-
-.said-bar .lista-dicas li:hover {
-    color: #000;
-    text-decoration: underline;
-    transition: all 0.5s ease-in-out;
-    transform: scale(1.01);
-    cursor: pointer;
+    list-style: decimal;
 }
 
 .said-bar__ods {
@@ -233,7 +219,6 @@ p {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-
 }
 
 .coleta-seletiva-img img {
@@ -267,7 +252,7 @@ blockquote p {
     padding: 0px 0px;
 }
 
-.leia-me__lista{
+.leia-me__lista {
     margin: 0px 0px;
     padding: 0px;
     display: flex;
@@ -275,6 +260,7 @@ blockquote p {
     justify-content: center;
     align-items: left;
 }
+
 .leia-me__lista li {
     list-style: none;
     margin: 0px 0px;
@@ -287,31 +273,34 @@ blockquote p {
     cursor: pointer;
     padding: 3px 0;
 }
-.leia-me__lista a{
+
+.leia-me__lista a {
     text-decoration: none;
     color: rgba(0, 0, 255, 0.671);
-   
+
 }
+
 .leia-me__lista li:hover {
-    color:rgba(0, 0, 255, 0.671);
+    color: rgba(0, 0, 255, 0.671);
     text-decoration: underline;
     transition: all 0.5s ease-in-out;
     transform: scale(1.01);
     cursor: pointer;
 }
-.leia-me{
+
+.leia-me {
     font-weight: 400;
     font-style: italic;
     color: var(--cor-geral);
     font-size: 1rem;
     padding-top: 0px;
 }
+
 .said-bar__ods img {
     width: 300px;
     height: 100%;
     box-shadow: 0px 0px 5px #000;
     margin-top: 20px;
-    padding-top: 20px;
 }
 
 #ods-text {
@@ -330,7 +319,6 @@ main .interface {
     padding: 0 40px;
     border-left: solid 2px var(--cor-borda);
     border-right: solid 2px var(--cor-borda);
-
 }
 
 #muvie-vida-agua {
@@ -344,9 +332,8 @@ main .interface {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid 20px;
-    border-bottom: solid 20px;
-
+    border-top: solid 2px;
+    border-bottom: solid 1px;
 }
 
 .encarte {
@@ -359,8 +346,8 @@ main .interface {
 
 .main-projetos h2 {
     padding-top: 20px;
-    /* border-top: solid #00000022 2px; */
 }
+
 .subtitulo {
     display: flex;
     width: 250px;
@@ -369,15 +356,14 @@ main .interface {
     justify-content: left;
     align-items: end;
     margin-bottom: 20px;
-    
 }
+
 .subtitulo img {
     width: 80px;
     height: 80px;
-    
-    
 }
-.subtitulo h2{
+
+.subtitulo h2 {
     padding: 0px 20px;
     margin: 0px;
 }
