@@ -104,15 +104,16 @@ p {
     font-weight: 400;
     margin-left: -15px;
     padding: 5px 5px;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: all.3s ease-in-out, color 0.3s ease-in-out;
 
-    transform: scale();
+    /* transform: scale(); */
 }
 
 .menu-navegacao a:hover {
     color: var(--cor-geral);
     text-decoration: underline;
-    transform: scale(1.02)
+    transform: scale(1.02);
+   
 }
 
 .navegacao {
@@ -137,6 +138,8 @@ p {
     margin-left: 10px;
     padding: 5px 5px 0px 20px;
     border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    transform: scale();
 }
 
 .topo-menu__redes-sociais i:hover {
@@ -198,7 +201,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 10px 20px 10px 20px;
-    box-shadow: 2px 30px 50px #0000003a;
+    box-shadow: 2px 10px 30px #0000003a;
 }
 
 .said-bar .lista-dicas {
@@ -227,14 +230,14 @@ p {
 .coleta-seletiva-img img {
     width: 100%;
     height: 100%;
-    box-shadow: 2px 30px 50px #0000003a;
+    box-shadow: 2px 10px 10px #0000003a;
     margin: 10px 0px;
 }
 
 .ecoponto-img iframe {
     width: 300px;
     height: 100%;
-    box-shadow: 2px 30px 50px #0000003a;
+    box-shadow: 2px 10px 10px #0000003a;
     margin: 5px 0px;
 }
 
@@ -302,7 +305,8 @@ blockquote p {
 .said-bar__ods img {
     width: 300px;
     height: 100%;
-    box-shadow: 0px 0px 5px #000;
+    box-shadow: 2px 10px 10px #0000003a;
+    
     margin-top: 20px;
 }
 
@@ -348,6 +352,7 @@ main .encarte {
 }
 .encarte img {
     width: 100%;
+    
 }
 main .encarte h2, main .encarte p {
     font-family: "bebas neue", sans-serif;
@@ -382,6 +387,7 @@ main .encarte p{
 .subtitulo img {
     width: 80px;
     height: 80px;
+    box-shadow: 2px 10px 10px #0000003a;
 }
 
 .subtitulo h2 {
@@ -403,8 +409,8 @@ main .encarte p{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    box-shadow: 2px 30px 30px #0000003a;
     padding: 3px;
+    box-shadow: 2px 10px 10px #0000003a;
 }
 
 .projetos p {
@@ -424,7 +430,7 @@ main .encarte p{
     width: 100%;
     padding: 25px 0;
     margin: 40px 0;
-    box-shadow: 2px 3px 5px #000000ad;
+    box-shadow: 2px 10px 10px #0000003a;
 }
 
 .button-topo {
@@ -516,7 +522,7 @@ li {
     justify-content: center;
     align-items: center;
     padding: 15px 20px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 .footer__desenvolvimento h3 {
@@ -559,16 +565,22 @@ li {
     font-weight: 200;
     font-size: .8rem;
     margin: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 .footer__copy a:hover {
     color: #f4f0f0;
     text-decoration: underline;
-    transition: all 0.5s ease-in-out;
-    transform: scale(1.05);
+    
+    transform: scaley(1.5);
 }
 
 .footer__copy i {
     padding: 5px;
     font-size: 1.2rem;
+}
+
+abbr {
+    text-decoration: none;
+    
 }
